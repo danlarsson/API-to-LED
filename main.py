@@ -45,11 +45,12 @@ def led_status(led):
    return(ret)
 
 def button_pressed(channel):
-   print("Button pressed")
+   # print("Button pressed")
    led_off(1)
    led_off(2)
 
-def signal_handler(sig, frame): # In use??
+def signal_handler(sig, frame): # In use? 
+   print("Shut")
    GPIO.cleanup()
    exit()
 

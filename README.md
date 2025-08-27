@@ -4,16 +4,15 @@
 - mkdir Someting
 - cd Someting
 - git pull https://github.com/danlarsson/API-to-LED.git
-
 - cd API-to-LED
 - python -m venv venv
-- pip install -r requirement.txt
+- source venv/bin/activate
+- pip install -r requirements.txt
 
 
 ## Run with
 - source venv/bin/activate
-- uvicorn main:app --host 0.0.0.0 --port 8073
-
+- python main.py
 
 ## Test 
 - http://serverip:8073
